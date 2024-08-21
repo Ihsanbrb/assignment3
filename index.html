@@ -19,15 +19,57 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-              }
-            }
-          }
+              },
+              fontFamily: {
+                Manrope: 'Manrope',
+              },
+            },
+          },
         }
       </script>
 </head>
-<body>
+<body class="font-Manrope">
     <!-- Header Section -->
-    <header>
+    <header class="bg-gradient-to-t from-slate-100 to-slate-50">
+        <!-- Navbar Section -->
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100 bg-gradient-to-t from-slate-100 to-slate-50">
+                <div class="navbar-start space-x-2 pl-4">
+                  <i class="fa-solid fa-arrow-right bg-lime-300 rounded-full p-2 -rotate-45 "></i>
+                  <a class="text-2xl lg:text-3xl font-bold">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal text-base px-1">
+                    <li class="text-base font-extrabold text-[#494949]"><a>Home</a></li>
+                    <li class="text-base text-[#737373]"><a>Services</a></li>
+                    <li class="text-base text-[#737373]"><a>Portfolio</a></li>
+                    <li class="text-base text-[#737373]"><a>Blog</a></li>
+                    <li class="text-base text-[#737373]"><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-4">
+                    <i class="fa-solid fa-magnifying-glass bg-white rounded-full p-1 hidden lg:block"></i>
+                    <i class="fa-solid fa-cart-shopping bg-white rounded-full p-1 hidden lg:block"></i>
+                  <button class="btn bg-[#ABEF5F] rounded-full font-bold text-xl hidden lg:block">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 -rotate-45 "></i></button>
+                  <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <a><i class="fa-solid fa-bars bg-white rounded-full p-3"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section class="px-5 text-center">
+                <div>
+                    <img class="mx-auto" src="./assets/banner.png" alt="">
+                    <h1 class="text-3xl lg:text-7xl font-bold">A barn house of this design has a striking appearance</h1>
+                    <br>
+                    <p class="lg:text-base lg:px-24">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                    <br>
+                    <button class="btn w-full lg:w-48 rounded-full text-xl bg-[#ABEF5F80]">View Details<i class="fa-solid fa-arrow-right bg-lime-400 rounded-full p-1 -rotate-45"></i></button>
+                </div>
+             </section>
+        </nav>
+        <!-- Banner Section -->
 
     </header>
     <!-- Main Body Section -->
