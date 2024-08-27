@@ -107,7 +107,7 @@
         </div>
       </nav>
       <!-- Banner Section -->
-      <section>
+      <section class="max-w-screen-xl mx-auto">
         <div class="text-center space-y-4">
           <img class="w-[570px] mx-auto" src="./assets/banner.png" alt="" />
           <h1
@@ -132,11 +132,11 @@
     <!-- Main Section -->
     <main class="px-4">
       <!-- About us Section -->
-      <section class="max-w-screen-xl mx-auto mb-10 pb-10">
+      <section class="max-w-screen-xl mx-auto relative mb-10 pb-10">
         <div class="grid lg:grid-cols-2 gap-8 items-center">
           <!-- Text Content -->
           <div>
-            <img src="./assets/Vector.png" alt="" />
+            <img class="w-20 absolute -top-2 -left-6 hidden lg:block" src="./assets/Vector.png" alt="" />
             <p class="btn rounded-full bg-white">
               <i class="fa-solid fa-arrow-right"></i> About Us
             </p>
@@ -286,48 +286,123 @@
           <!-- Grid Card Content -->
            <div>
             <!-- Grid 6 Cols 1 -->
-            <div class="grid grid-cols-6 gap-6">
+            <div class="lg:grid grid-cols-6 gap-4">
               <!-- Grid 4 Cols -->
-              <div class="flex col-span-4 gap-4 border p-6 rounded-2xl">
-                <div class="w-[60%]">
+              <div class="lg:flex col-span-4 gap-4 border p-5 rounded-2xl">
+                <div class="lg:w-[60%]">
                   <img class="w-full" src="./assets/img1.png" alt="">
                 </div>
+                <br>
                 <div class="space-y-5">
-                  <h2 class="text-xl font-bold">Commercial</h2>
+                  <h2 class="text-xl font-bold">Commercial-1</h2>
                   <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                   <button class="text-xl font-extrabold">View Details <i class="fa-solid fa-arrow-right bg-btnprimary rounded-full p-1 -rotate-45"></i></button>
                 </div>
               </div>
               <!-- Grid 2 Cols -->
-              <div class="w-[90%] col-span-2 gap-4 border p-6 rounded-2xl">
-                <img src="./assets/img2.png" alt="">
+              <div class="col-span-2 gap-4 border p-5 rounded-2xl">
+                <img class="w-full" src="./assets/img2.png" alt="">
               </div>
             </div>
             <br>
             <!-- Grid 6 Cols 2 -->
-            <div class="grid grid-cols-6 gap-6">
+            <div class="lg:grid grid-cols-5 gap-4">
               <!-- Grid 1 Cols -->
               <div class="flex col-span-1 gap-4 border p-4 rounded-2xl">
                   <img class="w-full" src="./assets/img3.png" alt="">
               </div>
-              <div class="flex col-span-4 gap-4 border p-4 rounded-2xl">
-                <div>
-                  <img class="w-full" src="./assets/img1.png" alt="">
+              
+              <!-- Grid 4 Cols -->
+              <div class="lg:flex col-span-3 gap-4 border p-4 rounded-2xl">
+                <div class="lg:w-[70%]">
+                  <img class="w-full" src="./assets/img4.png" alt="">
                 </div>
                 <div class="space-y-5">
-                  <h2 class="text-xl font-bold">Commercial</h2>
+                  <h2 class="text-xl font-bold">Commercial-2</h2>
                   <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                   <button class="text-xl font-extrabold">View Details <i class="fa-solid fa-arrow-right bg-btnprimary rounded-full p-1 -rotate-45"></i></button>
                 </div>
               </div>
+              
               <!-- Grid Cols 1 -->
-               <div class="col-span-1 gap-4 border p-6 rounded-2xl">
-                <img src="./assets/img4.png" alt="">
+               <div class="col-span-1 gap-4 border p-2 rounded-2xl">
+                <img class="w-full" src="./assets/img5.png" alt="">
               </div>
             </div>
            </div>
         </div>
        </section>
+
+       <!-- Our Work Section -->
+      <section class="max-w-screen-xl mx-auto mb-10 pb-10">
+        <div>
+          <!-- Text Content -->
+          <div class="text-center">
+            <p class="btn rounded-full bg-white">
+              <i class="fa-solid fa-arrow-right"></i> Pricing Planning
+            </p>
+            <br>
+            <h2 class="text-2xl lg:text-4xl font-bold text-ttprimary">
+              Our Pricing Plan
+            </h2>
+            <br>
+            <p class="font-medium text-dtprimary">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <br>
+          </div>
+          <!-- Card Content -->
+          <div class="lg:flex lg:gap-4">
+            <!-- card 1 -->
+            <div class="bg-[#e7c1d3] flex-1 p-6 rounded-2xl">
+              <h2 class="text-4xl font-extrabold text-ttsecendary">Basic Plan</h2>
+              <h3 class="text-2xl font-extrabold text-ttsecendary">$9999/Project</h3>
+              <br>
+              <ul>
+                <li>Most Beautiful Place</li>
+                <li>VIP Zone</li>
+                <li>Multi Apartment</li>
+                <li>EMI Facality</li>
+              </ul>
+              <br>
+              <button class="btn btn-secondary font-extrabold text-xl">Plan Details <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            </div>
+            <br>
+            <!-- card 2 -->
+            <div class="bg-[#e7c1d3] flex-1 p-6 rounded-2xl">
+              <h2 class="text-4xl font-extrabold text-ttsecendary">VIP Plan</h2>
+              <h3 class="text-2xl font-extrabold text-ttsecendary">$9999/Project</h3>
+              <br>
+              <ul>
+                <li>Most Beautiful Place</li>
+                <li>VIP Zone</li>
+                <li>Multi Apartment</li>
+                <li>EMI Facality</li>
+              </ul>
+              <br>
+              <button class="btn btn-secondary font-extrabold text-xl">Plan Details <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            </div>
+            <br>
+            <!-- card 3 -->
+            <div class="bg-[#e7c1d3] flex-1 p-6 rounded-2xl">
+              <h2 class="text-4xl font-extrabold text-ttsecendary">VIP Pro Plan</h2>
+              <h3 class="text-2xl font-extrabold text-ttsecendary">$99999/Project</h3>
+              <br>
+              <ul>
+                <li>Most Beautiful Place</li>
+                <li>VIP Zone</li>
+                <li>Multi Apartment</li>
+                <li>EMI Facality</li>
+              </ul>
+              <br>
+              <button class="btn btn-secondary font-extrabold text-xl">Plan Details <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            </div>
+            <br>
+          </div>
+        </div>
+      </section>
 
        <!-- Lets Discuss Section -->
         <section class="mb-10 pt-10 pb-10 bg-bgimages">
@@ -341,12 +416,53 @@
             <br>
             <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             <br>
-          </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="text-center space-y-3">
+              <div class="space-y-4">
+                <input type="text" placeholder="Frist Name*" class="input input-bordered w-full max-w-xs rounded-full" />
+                <input type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs rounded-full" /><br>
+                <input type="text" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs rounded-full" />
+                <input type="text" placeholder="Email Number*" class="input input-bordered w-full max-w-xs rounded-full" /><br>
+                <textarea class="textarea textarea-bordered w-5/6 lg:w-[640px] h-28" placeholder="Write your message here"></textarea><br>
+                <button class="bg-btnprimary w-5/6 lg:w-[640px] font-extrabold rounded-3xl py-3 px-5">Send Mail <i class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 -rotate-45"></i></button>
+              </div>
+            </div>
           </div>
         </section>
     </main>
 
     <!-- Footer Section -->
-    <footer></footer>
+    <footer>
+      <section class="bg-black">
+        <div class="max-w-screen-xl mx-auto text-center pb-10">
+          <div class="text-center p-2">
+          <i
+              class="fa-solid fa-arrow-right bg-btnprimary rounded-full p-1 -rotate-45"
+            ></i>
+            <a class="text-3xl font-bold text-ttprimary text-white">Rinterio</a>
+            <br>
+            <p class="text-dtsecendary font-medium lg:px-80">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <br>
+            <ul class="lg:flex gap-28 space-y-10 lg:space-y-0 justify-center">
+                <li class="dtsecendary text-base text-slate-50"><a>Home</a></li>
+                <li class="dtsecendary text-base text-slate-50"><a>Services</a></li>
+                <li class="dtsecendary text-base text-slate-50"><a>Portfolio</a></li>
+                <li class="dtsecendary text-base text-slate-50"><a>Blogs</a></li>
+                <li class="dtsecendary text-base text-slate-50"><a>Contact Us</a></li>
+              </ul>
+              <br>
+              <button
+                  class="text-xl font-extrabold bg-btnprimary rounded-[32px] w-[80%] lg:w-56 px-4 py-3"
+                >
+                  Book Consult
+                  <i
+                    class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 -rotate-45"
+                  ></i>
+                </button>
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
