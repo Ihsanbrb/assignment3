@@ -52,7 +52,7 @@
   <body class="font-manrope">
     <!-- Header Section -->
     <header
-      class="px-4 mb-10 bg-gradient-to-tr from-[rgb(244, 244, 244)] to-[rgb(255, 255, 255)]"
+      class="px-4 bg-gradient-to-t from-white to-gray-100 pb-8 lg:pb-28"
     >
       <nav class="max-w-screen-xl mx-auto">
         <div class="navbar">
@@ -90,7 +90,7 @@
             </div>
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <i class="fa-solid fa-bars bg-iconbg rounded-full p-3"></i>
+                <i class="fa-solid fa-bars bg-white border border-gray-200 rounded-full p-3"></i>
               </div>
               <ul
                 tabindex="0"
@@ -121,28 +121,32 @@
             large windows that flood the space with natural light.
           </p>
           <button
-            class="text-xl font-bold bg-btnsecendary px-6 py-3 rounded-[32px] w-full sm:w-auto"
+            class="text-xl font-extrabold bg-btnsecendary px-6 py-3 border border-[#abef5f] rounded-[32px] w-full mr-2 sm:w-auto"
           >
-            View Details
+            View Details <i
+              class="fa-solid fa-arrow-right bg-btnprimary rounded-full p-2 -rotate-45 ml-2"
+            ></i>
           </button>
         </div>
       </section>
     </header>
 
     <!-- Main Section -->
-    <main class="px-4">
+    <main>
       <!-- About us Section -->
-      <section class="max-w-screen-xl mx-auto relative mb-10 pb-10">
-        <div class="grid lg:grid-cols-2 gap-8 items-center">
+      <section class="bg-gray-100 pt-8 pb-8 lg:pt-28 lg:pb-28">
+        <div class="max-w-screen-xl px-4 mx-auto relative">
+          <div class="grid lg:grid-cols-2 gap-8 items-center">
           <!-- Text Content -->
-          <div>
-            <img class="w-20 absolute -top-2 -left-6 hidden lg:block" src="./assets/Vector.png" alt="" />
+            <div class="text-center lg:text-left">
+            <img class="w-20 absolute top-3 -left-3 hidden lg:block" src="./assets/Vector.png" alt="" />
             <p class="btn rounded-full bg-white">
               <i class="fa-solid fa-arrow-right"></i> About Us
             </p>
             <br />
+            <br>
             <h2
-              class="text-2xl md:text-3xl lg:text-4xl font-bold text-ttprimary"
+              class="text-2xl lg:text-4xl font-bold text-ttprimary"
             >
               We design thoughtful, liveable spaces
             </h2>
@@ -156,11 +160,11 @@
             <!-- Card Box -->
             <div class="space-y-5">
               <!-- Card 1 -->
-              <div class="flex gap-4 items-center bg-slate-300 p-5 rounded-2xl">
+              <div class="flex gap-4 items-center bg-white p-5 rounded-2xl">
                 <div>
                   <img src="./assets/commercial.png" alt="" />
                 </div>
-                <div>
+                <div class="text-left">
                   <h2
                     class="text-base md:text-lg lg:text-xl font-bold text-dtprimary"
                   >
@@ -173,11 +177,11 @@
                 </div>
               </div>
               <!-- Card 2 -->
-              <div class="flex gap-4 items-center bg-slate-300 p-5 rounded-2xl">
+              <div class="flex gap-4 items-center bg-white p-5 rounded-2xl">
                 <div>
                   <img src="./assets/residential.png" alt="" />
                 </div>
-                <div>
+                <div class="text-left">
                   <h2
                     class="text-base md:text-lg lg:text-xl font-bold text-dtprimary"
                   >
@@ -190,22 +194,24 @@
                 </div>
               </div>
             </div>
-          </div>
+            </div>
           <!-- Images Content -->
-          <div>
-            <img src="./assets/Rectangle.png" alt="" />
+            <div>
+              <img class="w-full" src="./assets/Rectangle.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Our Work Section -->
-      <section class="max-w-screen-xl mx-auto mb-10 pb-10">
-        <div>
+      <section class="bg-gray-100 pb-8 lg:pb-28">
+        <div class="max-w-screen-xl mx-auto px-4">
           <!-- Text Content -->
           <div class="text-center">
             <p class="btn rounded-full bg-white">
               <i class="fa-solid fa-arrow-right"></i> How we works
             </p>
+            <br>
             <br>
             <h2 class="text-2xl lg:text-4xl font-bold text-ttprimary">
               Our Works Process
@@ -270,15 +276,16 @@
       </section>
 
       <!-- Our Portfolio -->
-       <section class="max-w-screen-xl mx-auto mb-10 pb-10">
+       <section class="bg-gray-100 lg:bg-white pt-8 pb-8 lg:pt-28 lg:pb-20">
         <!-- Text Contnt -->
-        <div>
+        <div class="max-w-screen-xl mx-auto px-4">
           <div class="text-center">
             <p class="btn rounded-full bg-[#eefcdf]">
               <i class="fa-solid fa-arrow-right"></i> Explore our Latest works
             </p>
             <br>
-            <h2 class="text-2xl lg:text-4xl font-bold text-ttprimary">Our Latest Portfolio</h2>
+            <br>
+            <h2 class="text-2xl lg:text-4xl font-extrabold text-ttprimary">Our Latest Portfolio</h2>
             <br>
             <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             <br>
@@ -286,36 +293,37 @@
           <!-- Grid Card Content -->
            <div>
             <!-- Grid 6 Cols 1 -->
-            <div class="lg:grid grid-cols-6 gap-4">
+            <div class="lg:grid grid-cols-6 gap-4 space-y-4 lg:space-y-0">
               <!-- Grid 4 Cols -->
-              <div class="lg:flex col-span-4 gap-4 border p-5 rounded-2xl">
+              <div class="lg:flex bg-white col-span-4 gap-4 border p-5 rounded-2xl">
                 <div class="lg:w-[60%]">
-                  <img class="w-full" src="./assets/img1.png" alt="">
+                  <img class="w-full lg:w-[260px] lg:h-[180px]" src="./assets/img1.png" alt="">
                 </div>
                 <br>
                 <div class="space-y-5">
-                  <h2 class="text-xl font-bold">Commercial-1</h2>
+                  <h2 class="text-xl font-bold">Commercial</h2>
                   <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                   <button class="text-xl font-extrabold">View Details <i class="fa-solid fa-arrow-right bg-btnprimary rounded-full p-1 -rotate-45"></i></button>
                 </div>
               </div>
               <!-- Grid 2 Cols -->
-              <div class="col-span-2 gap-4 border p-5 rounded-2xl">
-                <img class="w-full" src="./assets/img2.png" alt="">
+              <div class="col-span-2 bg-white gap-4 border p-5 rounded-2xl">
+                <img class="w-full lg:w-[350px] lg:h-[180px]" src="./assets/img2.png" alt="">
               </div>
             </div>
             <br>
             <!-- Grid 6 Cols 2 -->
-            <div class="lg:grid grid-cols-5 gap-4">
+            <div class="lg:grid grid-cols-5 gap-4 space-y-4 lg:space-y-0">
               <!-- Grid 1 Cols -->
-              <div class="flex col-span-1 gap-4 border p-4 rounded-2xl">
-                  <img class="w-full" src="./assets/img3.png" alt="">
+              <div class="flex col-span-1 bg-white gap-4 border p-4 rounded-2xl">
+                  <img class="w-full lg:w-[225px] lg:h-[180px]" src="./assets/img3.png" alt="">
               </div>
               
               <!-- Grid 4 Cols -->
-              <div class="lg:flex col-span-3 gap-4 border p-4 rounded-2xl">
-                <div class="lg:w-[70%]">
-                  <img class="w-full" src="./assets/img4.png" alt="">
+              <div class="lg:flex col-span-3 bg-white gap-4 border p-4 rounded-2xl">
+                <div class="lg:w-[100%]">
+                  <img class="w-full lg:w-[260px] lg:h-[180px]" src="./assets/img4.png" alt="">
+                  <br>
                 </div>
                 <div class="space-y-5">
                   <h2 class="text-xl font-bold">Commercial-2</h2>
@@ -325,22 +333,23 @@
               </div>
               
               <!-- Grid Cols 1 -->
-               <div class="col-span-1 gap-4 border p-2 rounded-2xl">
-                <img class="w-full" src="./assets/img5.png" alt="">
+               <div class="col-span-1 bg-white gap-4 border p-4 rounded-2xl">
+                <img class="w-full lg:w-[225px] lg:h-[180px]" src="./assets/img5.png" alt="">
               </div>
             </div>
            </div>
         </div>
        </section>
 
-       <!-- Our Work Section -->
-      <section class="max-w-screen-xl mx-auto mb-10 pb-10">
+       <!-- Our Pricing Plan Section -->
+      <section class="max-w-screen-xl px-4 mx-auto pt-8 pb-8 lg:pb-28">
         <div>
           <!-- Text Content -->
           <div class="text-center">
             <p class="btn rounded-full bg-white">
               <i class="fa-solid fa-arrow-right"></i> Pricing Planning
             </p>
+            <br>
             <br>
             <h2 class="text-2xl lg:text-4xl font-bold text-ttprimary">
               Our Pricing Plan
@@ -358,7 +367,7 @@
             <!-- card 1 -->
             <div class="bg-[#e7c1d3] flex-1 p-6 rounded-2xl">
               <h2 class="text-4xl font-extrabold text-ttsecendary">Basic Plan</h2>
-              <h3 class="text-2xl font-extrabold text-ttsecendary">$9999/Project</h3>
+              <h3 class="text-2xl font-extrabold text-ttsecendary">$10000/Project</h3>
               <br>
               <ul>
                 <li>Most Beautiful Place</li>
@@ -373,7 +382,7 @@
             <!-- card 2 -->
             <div class="bg-[#e7c1d3] flex-1 p-6 rounded-2xl">
               <h2 class="text-4xl font-extrabold text-ttsecendary">VIP Plan</h2>
-              <h3 class="text-2xl font-extrabold text-ttsecendary">$9999/Project</h3>
+              <h3 class="text-2xl font-extrabold text-ttsecendary">$30000/Project</h3>
               <br>
               <ul>
                 <li>Most Beautiful Place</li>
@@ -388,7 +397,7 @@
             <!-- card 3 -->
             <div class="bg-[#e7c1d3] flex-1 p-6 rounded-2xl">
               <h2 class="text-4xl font-extrabold text-ttsecendary">VIP Pro Plan</h2>
-              <h3 class="text-2xl font-extrabold text-ttsecendary">$99999/Project</h3>
+              <h3 class="text-2xl font-extrabold text-ttsecendary">$50000/Project</h3>
               <br>
               <ul>
                 <li>Most Beautiful Place</li>
@@ -405,12 +414,13 @@
       </section>
 
        <!-- Lets Discuss Section -->
-        <section class="mb-10 pt-10 pb-10 bg-bgimages">
-          <div class="max-w-screen-xl mx-auto">
+        <section class="mb-3 pt-28 pb-28 bg-bgimages bg-cover">
+          <div class="max-w-screen-xl mx-auto px-4">
             <div class="text-center">
             <p class="btn rounded-full bg-[#eefcdf]">
               <i class="fa-solid fa-arrow-right"></i> Let’s Connect
             </p>
+            <br>
             <br>
             <h2 class="text-2xl lg:text-4xl font-bold text-ttprimary">Let’s Discuss Next Project</h2>
             <br>
@@ -424,8 +434,8 @@
                 <input type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs rounded-full" /><br>
                 <input type="text" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs rounded-full" />
                 <input type="text" placeholder="Email Number*" class="input input-bordered w-full max-w-xs rounded-full" /><br>
-                <textarea class="textarea textarea-bordered w-5/6 lg:w-[640px] h-28" placeholder="Write your message here"></textarea><br>
-                <button class="bg-btnprimary w-5/6 lg:w-[640px] font-extrabold rounded-3xl py-3 px-5">Send Mail <i class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 -rotate-45"></i></button>
+                <textarea class="textarea textarea-bordered rounded-3xl  w-[320px] lg:w-[640px] h-28" placeholder="Write your message here"></textarea><br>
+                <button class="bg-btnprimary w-[320px] lg:w-[640px] font-extrabold rounded-3xl py-3 px-5">Send Mail <i class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 -rotate-45"></i></button>
               </div>
             </div>
           </div>
@@ -435,12 +445,13 @@
     <!-- Footer Section -->
     <footer>
       <section class="bg-black">
-        <div class="max-w-screen-xl mx-auto text-center pb-10">
-          <div class="text-center p-2">
+        <div class="max-w-screen-xl mx-auto justify-center text-center pb-10">
+          <div class="text-center relative p-4">
           <i
-              class="fa-solid fa-arrow-right bg-btnprimary rounded-full p-1 -rotate-45"
+              class="fa-solid fa-arrow-right absolute top-6 left-[120px] lg:left-[550px] bg-btnprimary rounded-full p-1 -rotate-45"
             ></i>
             <a class="text-3xl font-bold text-ttprimary text-white">Rinterio</a>
+            <br>
             <br>
             <p class="text-dtsecendary font-medium lg:px-80">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             <br>
